@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather-forcast</title>
+  </head>
+  <body>
+    <div class="weather">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-input"
+            id="search-input"
+          />
+          <input type="submit" value="search" class="submit-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="lagos-city" id="city"></h1>
+            <p class="weather-details">
+              <span id="time"></span>
+              <span id="description"></span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind"> </strong>
+            </p>
+          </div>
+          <div class="weather-app-container">
+            <div class="weather-icon" id="icon"></div>
+            <div class="weather-temperature" id="temperature">31</div>
+            <div class="weather-unit">°C</div>
+          </div>
+        </div>
+        <div class="weather-forecast" id="forecast"></div>
+      </main>
+
+      <footer>
+        Coded by
+        <a href="https://github.com/Cynthiackay" target="_blank"
+          >Cynthia Kamau</a
+        >
+        is
+        <a href="https://github.com/Bisluv/Weather-forcast" target="_blank">
+          open-source on Github
+        </a>
+        and
+        <a href="https://bisluv-meteo-app.netlify.app/" target="_blank">
+          hosted on Netlify
+        </a>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
